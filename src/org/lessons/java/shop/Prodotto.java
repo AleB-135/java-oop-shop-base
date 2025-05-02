@@ -32,10 +32,5 @@ public class Prodotto {
     
     public String prodottoScelto (){
        return "Nome prodotto: " + nome + " " + "Codice prodotto: " + codice + ". " + "Descrizione prodotto: " + "" + descrizione + "." + " " + prezzoBase() + "." + " " + prezzoFinale() + "." + " " + nomeEsteso();
-
-    
-   
-    
-    
     }
 }
