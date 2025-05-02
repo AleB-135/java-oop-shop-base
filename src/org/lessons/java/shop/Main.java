@@ -2,12 +2,13 @@ package org.lessons.java.shop;
 
 public class Main {
     public static void main(String[] args) {
-        Prodotto prodotto = new Prodotto();
-        prodotto.nome = "Tablet";
+        Prodotto prodotto = new Prodotto("Tablet", "Tablet 10 pollici", 109.99f, 22);
+        
+        /*prodotto.nome = "Tablet";
         prodotto.descrizione = "Tablet 10 pollici";
         prodotto.prezzo = 109.99f;
         prodotto.iva = 22;
-
+        */
         
         System.out.println(prodotto.codice);
         System.out.println(prodotto.nome);

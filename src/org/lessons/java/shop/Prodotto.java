@@ -8,15 +8,15 @@ public class Prodotto {
     public float prezzo;
     public int iva;
 
-    /*public Prodotto {String nome, String descrizione, float prezzo, int iva;}{
+    public Prodotto(String nome, String descrizione, float prezzo, int iva){
         this.codice = (int)(Math.random()* 999999999);
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         this.iva = iva;
     }
-    */
-
+    
+    
     public String prezzoBase (){
         return "Il prezzo base del prodotto è: " + prezzo + " " + "euro";
     }
@@ -32,5 +32,6 @@ public class Prodotto {
     
     public String prodottoScelto (){
        return "Nome prodotto: " + nome + " " + "Codice prodotto: " + codice + ". " + "Descrizione prodotto: " + "" + descrizione + "." + " " + prezzoBase() + "." + " " + prezzoFinale() + "." + " " + nomeEsteso();
+    
     }
 }
