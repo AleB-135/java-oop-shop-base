@@ -1,8 +1,10 @@
 package org.lessons.java.shop;
 
+import java.util.Random;
+
 public class Prodotto {
 
-    public int codice = (int)(Math.random()* 999999999);
+    public int codice;
     public String nome;
     public String descrizione;
     public float prezzo;
@@ -10,7 +12,8 @@ public class Prodotto {
 
     
     public Prodotto(String nome, String descrizione, float prezzo, float iva){
-        this.codice = codice;
+        Random randomGenerator = new Random();
+        this.codice = randomGenerator.nextInt(111111111, 999999999);
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
